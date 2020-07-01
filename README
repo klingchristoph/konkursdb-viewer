@@ -1,0 +1,13 @@
+Erprobte Kompatibilität:
+- PHP 7.2.31 und 7.4.7
+- Apache 2.4.43
+- MariaDB 10.4.13
+- Bisher Windows 7 als Betriebssystem genutzt!
+
+Installation:
+- Datenbank-Zugangsdaten in config.php anpassen
+- memory_limit und time_limit in config.php ggf. anpassen (empfohlene werte für große Abfragen voreingestellt)
+- php.ini: include_path = "."
+- php.ini: max_input_vars = 65536
+- Webserver: index.php als Startseite festlegen (DirectoryIndex bei Apache)
+- Für das Verzeichnis templates_c sind Schreibrechte nötig. Im Produktivbetrieb kann in config.php das Caching der Template-Engine aktiviert werden. In diesem Fall sind auch Schreibrechte für das Verzeichnis cache erforderlich. 
